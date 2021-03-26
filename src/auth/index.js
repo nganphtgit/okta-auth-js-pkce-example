@@ -13,9 +13,9 @@ responseTypes[AUTH_CODE_GRANT_TYPE] = 'code';
 responseTypes[IMPLICIT_GRANT_TYPE] =  ['id_token', 'token'];
 
 const oktaAuth = new OktaAuth({
-    issuer: ISSUER,
-    clientId: CLIENT_ID,
-    redirectUri: REDIRECT_URL
+    issuer: 'https://dev-85308807.okta.com',
+    clientId: '0oadalu5jwMdgltQi5d6',
+    redirectUri: 'http://localhost:8080/callback'
 });
 
 export function validateAccess(to, from, next) {
